@@ -25,7 +25,7 @@
 }
 
 .slogan {
-  font-family: 'Advent Pro', sans-serif;
+  font-family: 'my_underwoodregular';
   font-size: 25px;
   padding-top: 26px;
 }
@@ -36,8 +36,10 @@
 
 .links a{
   color: black;
-  font-size: 25px;
+  font-size: 20px;
   border-bottom: 1px solid #F84342;
+  font-family: 'my_underwoodregular';
+  font-weight: bold;
 }
 
 header {
@@ -48,3 +50,15 @@ hr {
   clear:both;
 }
 
+h1 {
+  font-family: 'my_underwoodregular';
+  font-weight: bold;
+  font-size: 40px;
+  letter-spacing: -1.5px;
+}
+
+h2 {
+  font-family: 'my_underwoodregular';
+  font-weight: bold;
+  letter-spacing: -1.5px;
+}

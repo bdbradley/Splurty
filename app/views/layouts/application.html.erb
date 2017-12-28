@@ -6,9 +6,10 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <!-- Use for a Google font
     <style>
       @import url('https://fonts.googleapis.com/css?family=Advent+Pro:500');
-    </style>
+    </style>-->
   </head>
 
   <body>
@@ -36,6 +37,23 @@
 
     <br class="clear" />
 
+<div class="container">
     <%= yield %>
+</div>
+
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-6">
+      <%= link_to "This isn't enough, I need more", "#", class: 'next-quote' %>
+      </div>
+      <div class="col-6">
+        Built by Barry Bradley, My github is at <a href="https://github.com/bdbradley">Github</a><br />
+        Want to build your own Spurty web app? <a href="http://thefirehoseproject.com">Learn how to code here. </a>
+      </div>
+    </div>
+  </div>
+</div>
+
   </body>
 </html>

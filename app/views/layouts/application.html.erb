@@ -6,29 +6,31 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <!-- Use for a Google font
+    <!--Use for a Google font-->
     <style>
       @import url('https://fonts.googleapis.com/css?family=Advent+Pro:500');
-    </style>-->
+    </style>
   </head>
 
   <body>
-    <header class="row">
+    <header class="row"> 
       <div class="col-3">
-        <div class="circle">
-          <br />
-          You know
-          <br />
-          you need
-          <br />
-          to code
-        </div>
+        <%= link_to root_path, class: 'logo' do %>
+          <div class="circle">
+            <br />
+            You know
+            <br />
+            you need
+            <br />
+            to code
+          </div>
+        <% end %>
       </div>
       <div class="col-4 slogan">
         Splurting out various dystopian related quotes since 2017
       </div>
       <div class="col-5 links">
-        <%= link_to 'Contribute', '#' %>
+        <%= link_to 'Contribute', new_quote_path %>
         <%= link_to 'About', '#' %>
       </div>
     </header>
@@ -45,10 +47,10 @@
   <div class="container">
     <div class="row">
       <div class="col-6">
-      <%= link_to "This isn't enough, I need more", "#", class: 'next-quote' %>
+        <%= link_to "This isn't enough, I need more", root_path, class: 'next-quote' %>
       </div>
-      <div class="col-6">
-        Built by Barry Bradley, My github is at <a href="https://github.com/bdbradley">Github</a><br />
+      <div class="col-6 footer-blurb">
+        Built by Barry Bradley, Other projects of mine at my <a href="https://github.com/bdbradley">Github </a>  account<br />
         Want to build your own Spurty web app? <a href="http://thefirehoseproject.com">Learn how to code here. </a>
       </div>
     </div>

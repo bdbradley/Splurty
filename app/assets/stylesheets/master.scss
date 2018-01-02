@@ -64,6 +64,13 @@ h2 {
   letter-spacing: -1.5px;
 }
 
+h2 span {
+  color: #525456;
+  font-family: 'my_underwoodregular';
+  font-weight: bold;
+  letter-spacing: -1.5px;
+}
+
 .next-quote {
   color: #f84342;
   font-family: 'my_underwoodregular';
@@ -87,4 +94,19 @@ h2 {
   font-family: 'my_underwoodregular';
   font-size: 20px;
   padding-top: 26px;
+}
+
+
+@media (max-width: 750px) {
+  .footer-blurb {
+    text-align: left;
+  }
+}
+
+.modal {
+  font-family: 'my_underwoodregular';
+}
+
+::selection {
+  background-color: #f84342;
 }
